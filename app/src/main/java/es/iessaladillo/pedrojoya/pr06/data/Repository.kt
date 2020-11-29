@@ -3,7 +3,7 @@ package es.iessaladillo.pedrojoya.pr06.data
 import androidx.lifecycle.LiveData
 import es.iessaladillo.pedrojoya.pr06.data.model.User
 
-interface DataSource {
+interface Repository {
 
     fun getAllUsersOrderedByName(): LiveData<List<User>>
     fun insertUser(user: User)
